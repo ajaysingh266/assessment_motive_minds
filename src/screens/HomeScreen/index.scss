@@ -1,0 +1,58 @@
+/* home screen css*/
+.home-screen-container{
+  @apply max-w-2xl mx-auto py-16 px-4 sm:py-16 sm:px-6 lg:max-w-7xl lg:px-8
+}
+
+/* home header component css */
+
+.home-header-container{
+  @apply mb-8 grid grid-cols-1 gap-y-10 gap-x-6 grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 xl:gap-x-8;
+  .home-img-container {
+    @apply relative shadow rounded-md;
+    .home-img-wrapper{
+      @apply w-full flex justify-center rounded-md overflow-hidden lg:h-16;
+      .home-img{
+        @apply w-full h-full object-center object-contain lg:w-full lg:h-full
+      }
+    }
+
+  }
+}
+
+/* home main view component css */
+.main-heading-container{
+  @apply py-6 flex justify-between items-center pb-8;
+  .main-heading{
+    @apply capitalize text-2xl font-extrabold tracking-tight text-gray-800;
+  }
+}
+.main-spinner-wrapper{
+  @apply flex justify-center;
+}
+.main-data-container{
+  @apply pt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 lg:grid-cols-5 xl:gap-x-8;
+  .main-data-text-wrapper{
+    @apply flex justify-between pt-6;
+    .main-data-text-rating{
+      @apply text-sm;
+    }
+  }
+  .main-data-price-wrapper{
+    @apply flex justify-between pt-1;
+    .price-text{
+      @apply text-sm;
+    }
+    .price-font-600{
+      @apply font-600
+    }
+  }
+  .main-data-category{
+    @apply capitalize;
+  }
+  .main-data-title{
+    @apply font-500 py-1
+  }
+  .main-data-text-xs{
+    @apply text-xs
+  }
+}

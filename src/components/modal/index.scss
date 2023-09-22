@@ -1,0 +1,22 @@
+.modal-input-wrapper{
+  @apply py-2 flex justify-center;
+  .modal-input{
+    @apply py-1 px-2 w-96 border rounded border-blue-600 outline-none;
+  }
+}
+.modal-content-wrapper{
+  @apply flex items-center gap-8 hover:shadow-xl p-2 cursor-pointer;
+  .modal-data-title{
+    @apply text-purple-800 font-500
+  }
+  .modal-data-category{
+    @apply capitalize
+  }
+}
+
+::-webkit-scrollbar{
+  @apply w-1
+}
+::-webkit-scrollbar-thumb{
+  @apply bg-[#1890ff] pl-4
+}

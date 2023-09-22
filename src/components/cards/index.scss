@@ -1,0 +1,6 @@
+.card-container {
+  @apply w-full min-h-40 rounded-md overflow-hidden lg:h-40  cursor-pointer;
+  .card-image {
+    @apply w-full h-full object-center object-contain lg:w-full;
+  }
+}
